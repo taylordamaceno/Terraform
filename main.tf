@@ -13,12 +13,12 @@ module "vpc" {
   name = "lab"
 
 
-  cidr = "10.10.0.0/16"
+  cidr = "10.0.0.0/16"
     
    public_subnets      = "10.0.9.0/24" 
-   private_subnets     = "10.0.4.0/22"
+   app_subnets     = "10.0.4.0/22"
    data_subnets    = "10.0.0.0/22"
-   platfomr_subnets  = "10.0.4.0/24"
+   platform_subnets  = "10.0.4.0/24"
 
 
   create_database_subnet_group = false
